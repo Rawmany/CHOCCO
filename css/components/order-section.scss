@@ -1,0 +1,19 @@
+.order-section {
+    position: relative;
+    background: url("/img/decoration/form-pattern.png") no-repeat;
+  
+    &::before {
+      position: absolute;
+      content: url("/img/decoration/blueberry.png"); 
+      left: 3%;
+      bottom: 5%;
+    }
+  
+    &::after {
+      content:  
+      url("/img/decoration/right-leaf.png");
+      position: absolute;
+      bottom: 5%;
+      right: 3%;
+    }
+  }
