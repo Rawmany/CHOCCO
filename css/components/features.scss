@@ -1,12 +1,12 @@
 .features {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
 
 .features__item {
     display: flex;
     align-items: center;
-    margin-right: 46px;
+    margin-right: rem(46px);
 
     &:last-child {
         margin-right: 0;

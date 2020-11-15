@@ -3,15 +3,15 @@
     background: url(../img/CHOCCO/project_svg/Ягода-3-1.png) right 5% top no-repeat;
     
     &:before {
-        background: url(/img/decoration/reviews-bottom-decor.png) no-repeat;
-        content: url(/img/decoration/strawberry-bottom.png);
+        background: url(../img/decoration/reviews-bottom-decor.png) no-repeat;
+        content: url(../img/decoration/strawberry-bottom.png);
         position: absolute;
-        bottom: -80px;
+        bottom: rem(-80px);
         left: 0;
     }
 
     &:after {
-        content: url(/img/decoration/reviews-strawberry.png);
+        content: url(../img/decoration/reviews-strawberry.png);
         position: absolute;
         top: 0;
         right: 0;

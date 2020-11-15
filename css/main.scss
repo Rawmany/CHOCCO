@@ -1,6 +1,11 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
@@ -8,6 +13,8 @@ $green: #497870;
 
 //z-indexes
 $z-fixed-menu: 100;
+
+@import "media";
 
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
@@ -20,6 +27,7 @@ $z-fixed-menu: 100;
 @import "components/hero.scss";
 @import "components/logo.scss";
 @import "components/header.scss";
+@import "components/menu.scss";
 @import "components/features.scss";
 @import "components/feature.scss";
 @import "components/btn.scss";
@@ -35,3 +43,4 @@ $z-fixed-menu: 100;
 @import "components/form.scss";
 @import "components/radio.scss";
 @import "components/fixed-menu.scss";
+@import "components/hamburger.scss";
