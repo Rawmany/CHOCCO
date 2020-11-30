@@ -2,6 +2,10 @@
     position: relative;
     background: url(../img/decoration/side-leaf.png) left top 57% no-repeat;
 
+    @include tablets {
+        background-position: left top 17%;
+      }
+
     @include phones {
         background: none;
     }

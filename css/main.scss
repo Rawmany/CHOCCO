@@ -30,12 +30,16 @@ $z-fixed-menu: 100;
 @import "components/menu.scss";
 @import "components/features.scss";
 @import "components/feature.scss";
+@import "components/hamburger.scss";
+@import "components/overlay.scss";
 @import "components/btn.scss";
 @import "components/section.scss";
 @import "components/headline.scss";
 @import "components/benefits.scss";
 @import "components/benefit.scss";
 @import "components/benefits-section.scss";
+@import "components/slider.scss";
+@import "components/composition.scss";
 @import "components/reviews.scss";
 @import "components/interactive-avatar.scss";
 @import "components/reviews-section.scss";
@@ -43,4 +47,8 @@ $z-fixed-menu: 100;
 @import "components/form.scss";
 @import "components/radio.scss";
 @import "components/fixed-menu.scss";
-@import "components/hamburger.scss";
+@import "components/footer.scss";
+@import "components/socials.scss";
+
+
+

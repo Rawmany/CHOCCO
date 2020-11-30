@@ -2,7 +2,6 @@
 background: url(../img/decoration/big-leaf.png) right bottom no-repeat;
 background-color: #61C4D9;    
 height: 100vh;
-min-width: rem(650px);
 color: #fff;
 position: relative;
 
@@ -55,6 +54,10 @@ position: relative;
     }
 }
 
+.hero__title-text {
+    width: 50%;
+}
+
 .hero__icons-section {
     @include tablets {
         display: none;
@@ -65,8 +68,8 @@ position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    page-break-after: rem(24px) 0 rem(45px) 0;
+    height: 100%;    
+    
 }
 
 .hero__main-title {
@@ -94,5 +97,8 @@ position: relative;
 .hero__img-content-section {
     @include tablets {
         display: none;
+        flex: 1;
+        max-width: 50%;
+        flex-shrink: 0;
     }
 }

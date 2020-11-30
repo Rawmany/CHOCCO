@@ -1,9 +1,15 @@
 .benefits {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: 3%;
+    margin-right: 4%;
 
     @include phones {
-        flex-direction: column;
-    }
+        display: flex;
+        flex-direction: column;        
+        justify-content: space-between;
+        height: 100%;
+      }
 }
 
 .benefits__item {

@@ -1,6 +1,9 @@
 .order-section {
     position: relative;
     background: url("../img/decoration/form-pattern.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   
     &::before {
       position: absolute;

@@ -7,10 +7,8 @@
 .reviews__display {
     background: #f8faf9 url(../img/decoration/berries-sketch.png) right top no-repeat;
     padding: rem(50px) rem(45px) rem(34px);
-    width: rem(940px);
-    height: rem(348px);  
-    margin-bottom: rem(20px);
-    overflow: hidden;
+    max-width: rem(940px);     
+    margin-bottom: rem(20px);    
     position: relative;
     
     &:before {
