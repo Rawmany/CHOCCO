@@ -1,0 +1,29 @@
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  min-height: rem(650px);
+
+  @include phones {
+    align-items: center;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: rem(25px);
+  
+  @include tablets {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  width: 74%;
+}

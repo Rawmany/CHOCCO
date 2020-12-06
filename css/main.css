@@ -453,6 +453,16 @@ img {
   color: #0b4d3c;
   transition: 0.3s;
 }
+.btn-close_app {
+  background: #0b4d3c;
+  border: 1px solid #0b4d3c;
+  color: #fff;
+}
+.btn-close_app:hover {
+  background: #fff;
+  color: #0b4d3c;
+  transition: 0.3s;
+}
 
 .section {
   height: 100vh;
@@ -837,85 +847,178 @@ img {
   padding-right: 20px;
 }
 
-.reviews {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (max-width: 480px) {
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+  }
 }
 
-.reviews__display {
-  background: #f8faf9 url(../img/decoration/berries-sketch.png) right top no-repeat;
-  padding: 2.7777777778rem 2.5rem 1.8888888889rem;
-  max-width: 52.2222222222rem;
-  margin-bottom: 1.1111111111rem;
+.reviews-section {
+  position: relative;
+  background: url("../img/CHOCCO/reviews/berry_3.png") right 5% top 1% no-repeat;
+}
+@media screen and (max-width: 480px) {
+  .reviews-section {
+    background-position: right 1% top 1%;
+  }
+}
+.reviews-section::before {
+  content: url("../img/CHOCCO/reviews/pattern_1.png");
+  position: absolute;
+  bottom: -8.5555555556rem;
+  left: 0;
+}
+.reviews-section::after {
+  content: url("../img/CHOCCO/reviews/berry_2.png");
+  position: absolute;
+  bottom: -4.4444444444rem;
+  left: 0;
+}
+
+.reviews-display {
+  background: #F8FAF9 url("../img/CHOCCO/reviews/layer_1.png") right top no-repeat;
+  margin-left: 4.6666666667rem;
+  margin-right: 4.3333333333rem;
+  padding: 2.8333333333rem 4.3333333333rem 1.8888888889rem 2.4444444444rem;
+  overflow: hidden;
   position: relative;
 }
-.reviews__display:before {
+@media screen and (max-width: 768px) {
+  .reviews-display {
+    display: flex;
+    margin: 0 0 2.2222222222rem;
+    padding: 2.8333333333rem 1.2222222222rem 1.8888888889rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews-display {
+    justify-content: flex-end;
+    margin: 0;
+    padding: 2.6666666667rem 1.2222222222rem 1.8888888889rem;
+  }
+}
+.reviews-display::before {
   content: "";
-  display: block;
+  position: absolute;
   width: 5rem;
   height: 5rem;
-  background: #fff;
+  background: #ffff;
   border-radius: 50%;
-  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: -3.6111111111rem;
 }
+@media screen and (max-width: 480px) {
+  .reviews-display::before {
+    display: none;
+  }
+}
 
-.reviews__display-inner {
+.reviews-display_list {
+  position: relative;
+  min-height: 280px;
+}
+
+.reviews-display_item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  opacity: 0;
+}
+.reviews-display_item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.reviews-display-inner {
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  .reviews__display-inner {
+  .reviews-display-inner {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
 }
 
-.reviews__avatar {
+.reviews-avatar {
   width: 14.1111111111rem;
   height: 14.4444444444rem;
 }
 @media screen and (max-width: 768px) {
-  .reviews__avatar {
+  .reviews-avatar {
     width: 7.2222222222rem;
     height: 7.3333333333rem;
   }
 }
 
-.reviews__avatar-img {
+.reviews-avatar-img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.reviews__content {
+.reviews-content {
   flex: 1;
   margin-left: 1.1111111111rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews-content_block1 {
+    display: none;
+  }
+}
 
-.reviews__title {
+.reviews-title {
+  color: #292929;
+  margin-top: 0.5rem;
   font-size: 1.6666666667rem;
   font-weight: bold;
-  margin-bottom: 1.2222222222rem;
-  color: black;
+  margin-bottom: 1rem;
 }
 
-.reviews__text {
-  margin-bottom: 2rem;
+.reviews-text {
+  color: #666666;
+  line-height: 1.2;
+  margin-bottom: 1.4444444444rem;
+  padding-right: 20%;
+}
+@media screen and (max-width: 768px) {
+  .reviews-text {
+    padding: 0;
+  }
 }
 
-.reviews__author {
+.reviews-author {
+  color: #292929;
   font-size: 1rem;
   font-weight: bold;
-  color: black;
 }
 
-.reviews__switcher {
+.reviews-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+.reviews-switcher_item {
+  position: relative;
+  width: 4.5555555556rem;
+  height: 4.5555555556rem;
+  border: 0.2222222222rem solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.reviews-switcher_item.active {
+  border-color: #365A49;
 }
 
 .interactive-avatar {
@@ -946,21 +1049,137 @@ img {
   object-fit: cover;
 }
 
-.reviews-section {
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .team-list {
+    padding: 0 10%;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-align: center;
+  }
+}
+
+.team-item {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
+  max-width: 231px;
   position: relative;
 }
-.reviews-section:before {
-  background: url(../img/decoration/reviews-bottom-decor.png) no-repeat;
-  content: url(../img/decoration/strawberry-bottom.png);
-  position: absolute;
-  bottom: -4.4444444444rem;
-  left: 0;
+@media screen and (max-width: 768px) {
+  .team-item {
+    flex: initial;
+    margin-bottom: 35px;
+    margin-right: 0;
+  }
 }
-.reviews-section:after {
-  content: url(../img/decoration/reviews-strawberry.png);
+
+.team-member {
+  height: 288px;
+  margin-bottom: 20px;
+}
+
+.team-desktop .team-content {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 100%;
+}
+@media screen and (max-width: 768px) {
+  .team-desktop {
+    display: none;
+  }
+}
+
+.team-phone {
+  display: none;
+}
+.team-phone .team-item {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .team-phone {
+    display: flex;
+  }
+}
+
+.team-title {
+  color: #000000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.team-content {
+  overflow: hidden;
+  transition: height 0.3s;
+  height: 0;
+}
+.team-content_block.team-content_bottom {
+  margin-bottom: 20px;
+}
+.team-content_block .team-content_job {
+  color: #000000;
+}
+.team-content_block .team-content_text {
+  color: #666666;
+  font-weight: 300;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.socials {
+  margin-right: 74px;
+  display: flex;
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.socials__item--icon--vk .socials__link {
+  background-image: url("../img/icons/vk.svg");
+}
+
+.socials__item--icon--fb .socials__link {
+  background-image: url("../img/icons/f.svg");
+}
+
+.socials__item--icon--insta .socials__link {
+  background-image: url("../img/icons/in.svg");
+}
+
+.socials__item--icon--tw .socials__link {
+  background-image: url("../img/icons/tv.svg");
 }
 
 .order-section {
@@ -1035,9 +1254,19 @@ img {
   border-radius: 0.2222222222rem;
   border: solid 0.1666666667rem transparent;
 }
+@media screen and (max-width: 480px) {
+  .form__input {
+    padding: 0;
+  }
+}
 .form__input--textarea {
   height: 9.8333333333rem;
   resize: none;
+}
+@media screen and (max-width: 480px) {
+  .form__input--textarea {
+    height: 4.1666666667rem;
+  }
 }
 .form__input:focus {
   border-color: #DEE2BD;
@@ -1045,13 +1274,18 @@ img {
   outline: none;
 }
 
+.input-error {
+  border-color: red;
+}
+
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 2.2222222222rem;
 }
 @media screen and (max-width: 480px) {
   .form__controls {
-    justify-content: center;
+    padding-bottom: 0.8333333333rem;
   }
 }
 
@@ -1111,6 +1345,33 @@ img {
 .radio__title {
   padding-left: 0.5555555556rem;
   padding-right: 1.2777777778rem;
+}
+
+.modal {
+  display: none;
+}
+.modal.error-modal .modal-content {
+  color: red;
+}
+.modal.fancybox-content {
+  color: #000000;
+  font-weight: 500;
+  padding: 0 !important;
+}
+.modal .fancybox-button {
+  display: none;
+}
+
+.error-modal {
+  color: red;
+}
+
+.modal-container {
+  background: #fff;
+  padding: 35px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fixed-menu {

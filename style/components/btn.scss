@@ -1,0 +1,58 @@
+.btn {
+  background: #fff;
+  color: $darkGreen;
+  font-size: rem(19px);
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: rem(35px);
+  padding: rem(17px) rem(38px);
+
+    &:hover {
+      background: $darkGreen;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    &-green {
+    background: $darkGreen;
+    border: 1px solid $darkGreen;
+    color: #fff;
+  
+    &:hover {
+      background: #fff;
+      color: $darkGreen;
+      transition: 0.3s;
+    }
+  }
+
+  &-close_app {
+    background: $darkGreen;
+    border: 1px solid $darkGreen;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: $darkGreen;
+      transition: 0.3s;
+      
+    }
+  }  
+
+  &-transparent {
+    background: transparent;
+    color: #000;
+    text-transform: none;
+    
+    &:hover {
+      background: transparent;
+      color: $darkGreen;
+    }
+  }
+}
+
+
+

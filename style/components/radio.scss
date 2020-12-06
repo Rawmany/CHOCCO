@@ -1,0 +1,53 @@
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: rem(10px);
+
+  &_checkbox {
+    .radio-visible {
+      border-radius: 0;
+
+      &::before {
+        background: url("../img/CHOCCO/icons/checkmark.svg") center center no-repeat;
+      }
+    }
+  }
+}
+
+.radio-elem {
+  display: none;
+
+  &:checked ~ .radio-visible {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.radio-visible {
+  width: rem(26px);
+  height: rem(26px);
+  position: relative;
+  border-radius: 50%;
+  background: #ffffff;
+
+  &::before {
+    content: "";
+    width: rem(14px);
+    height: rem(14px);
+    background: #365A49;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+.radio-title {
+  padding-left: rem(10px);
+  padding-right: rem(23px);
+}

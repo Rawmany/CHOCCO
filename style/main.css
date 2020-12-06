@@ -1,0 +1,1448 @@
+@import url("normalize/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap");
+/* line 1, layout/layout.scss */
+html {
+  font-size: 18px; }
+  @media screen and (max-width: 768px) {
+    /* line 1, layout/layout.scss */
+    html {
+      font-size: 17px; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, layout/layout.scss */
+    html {
+      font-size: 16px; } }
+
+/* line 13, layout/layout.scss */
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #fff;
+  line-height: 1.42;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  position: relative; }
+
+/* line 22, layout/layout.scss */
+body, html {
+  height: 100%; }
+
+/* line 26, layout/layout.scss */
+.big-block {
+  height: 100vh;
+  width: 100vw;
+  background: #497870; }
+
+/* line 33, layout/layout.scss */
+a {
+  color: inherit; }
+
+/* line 37, layout/layout.scss */
+table {
+  border-collapse: collapse; }
+
+/* line 41, layout/layout.scss */
+ul {
+  padding: 0;
+  margin: 0; }
+  /* line 44, layout/layout.scss */
+  ul li {
+    list-style: none; }
+
+/* line 49, layout/layout.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal; }
+
+/* line 54, layout/layout.scss */
+p {
+  margin: 0;
+  padding: 0; }
+
+/* line 59, layout/layout.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 63, layout/layout.scss */
+img {
+  display: block;
+  width: 100%; }
+
+/* line 68, layout/layout.scss */
+footer {
+  position: relative;
+  width: 100%; }
+
+/* line 73, layout/layout.scss */
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden; }
+
+/* line 80, layout/layout.scss */
+.container {
+  width: 95%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative; }
+
+/* line 1, components/hero.scss */
+.hero {
+  background: url("../img/CHOCCO/hero/pattern.png") right bottom no-repeat;
+  background-color: #61C4D9;
+  height: 100vh;
+  min-width: 36.1111111111rem;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/hero.scss */
+    .hero {
+      background-position: right bottom 67%; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/hero.scss */
+    .hero {
+      background-position: right bottom 67%;
+      min-width: 0; } }
+  @media screen and (max-width: 768px) {
+    /* line 19, components/hero.scss */
+    .hero::before, .hero::after {
+      display: none; } }
+  /* line 25, components/hero.scss */
+  .hero::before {
+    content: url("../img/CHOCCO/hero/group_6.png");
+    position: absolute;
+    bottom: -6%;
+    right: 15%; }
+  /* line 33, components/hero.scss */
+  .hero::after {
+    content: url("../img/CHOCCO/hero/sheet_3.png");
+    position: absolute;
+    bottom: -6%;
+    left: 7%; }
+
+/* line 41, components/hero.scss */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1.3333333333rem 0 2.5rem;
+  background: url("../img/CHOCCO/hero/bars.png") right center/50% auto no-repeat; }
+  @media screen and (max-width: 768px) {
+    /* line 41, components/hero.scss */
+    .hero-container {
+      background: none; } }
+
+/* line 1, components/header.scss */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  min-height: 36.1111111111rem; }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/header.scss */
+    .header-content {
+      align-items: center; } }
+
+/* line 13, components/header.scss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.3888888889rem; }
+  @media screen and (max-width: 768px) {
+    /* line 13, components/header.scss */
+    .header {
+      padding-top: 0;
+      margin-bottom: 0; } }
+
+/* line 25, components/header.scss */
+.header-logo {
+  display: flex;
+  align-items: center;
+  width: 74%; }
+
+/* line 1, components/logo.scss */
+.logo {
+  display: flex;
+  margin-right: 2.5555555556rem;
+  width: 2.9055555556rem;
+  height: 2.1111111111rem;
+  content: url("../img/CHOCCO/container-logo/logo.svg");
+  align-items: center; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/logo.scss */
+    .logo {
+      margin-left: 0; } }
+
+/* line 1, components/menu.scss */
+.menu-header {
+  display: flex;
+  width: 96%; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/menu.scss */
+    .menu-header {
+      display: none; } }
+
+/* line 10, components/menu.scss */
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between; }
+
+/* line 17, components/menu.scss */
+.menu-link {
+  text-decoration: none;
+  font-size: 1rem; }
+
+/* line 1, components/contacts.scss */
+.contacts-header {
+  display: flex;
+  justify-content: flex-end; }
+
+/* line 6, components/contacts.scss */
+.contacts-phone {
+  display: flex;
+  align-items: center;
+  font-size: 1.3333333333rem;
+  text-decoration: none; }
+
+@media screen and (max-width: 768px) {
+  /* line 13, components/contacts.scss */
+  .contacts-phone_header {
+    display: none; } }
+
+/* line 19, components/contacts.scss */
+.contacts-phone::before {
+  content: url("../img/CHOCCO/container-logo/phone.png");
+  margin-right: 0.2777777778rem; }
+
+/* line 1, components/burger.scss */
+.burger-span {
+  position: absolute;
+  display: none;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: opacity .25s ease;
+  -o-transition: opacity .25s ease;
+  transition: opacity .25s ease; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/burger.scss */
+    .burger-span {
+      display: flex; } }
+  /* line 17, components/burger.scss */
+  .burger-span.burger-span--active {
+    opacity: 0.7; }
+    /* line 20, components/burger.scss */
+    .burger-span.burger-span--active .burger-span_top {
+      -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+      -ms-transform: translateY(11px) translateX(0) rotate(45deg);
+      transform: translateY(11px) translateX(0) rotate(405deg);
+      border-radius: 5px; }
+    /* line 27, components/burger.scss */
+    .burger-span.burger-span--active .burger-span_middle {
+      opacity: 0; }
+    /* line 31, components/burger.scss */
+    .burger-span.burger-span--active .burger-span_bottom {
+      -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+      -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
+      transform: translateY(-11px) translateX(0) rotate(-405deg);
+      border-radius: 5px; }
+  /* line 39, components/burger.scss */
+  .burger-span_item {
+    background: #fff;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .65s ease;
+    -o-transition: all .65s ease;
+    transition: all .65s ease;
+    cursor: pointer; }
+    /* line 53, components/burger.scss */
+    .burger-span_item:nth-of-type(2) {
+      top: 11px; }
+    /* line 57, components/burger.scss */
+    .burger-span_item:nth-of-type(3) {
+      top: 22px; }
+
+/* line 1, components/overlay.scss */
+.overlay {
+  position: fixed;
+  background: #2e3133;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .35s, visibility .35s, height .35s;
+  -o-transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden; }
+  /* line 16, components/overlay.scss */
+  .overlay.overlay--open {
+    opacity: .99;
+    visibility: visible;
+    height: 100%; }
+    /* line 21, components/overlay.scss */
+    .overlay.overlay--open .overlay-menu_item {
+      -webkit-animation: fadeInRight .5s ease forwards;
+      animation: fadeInRight .5s ease forwards;
+      -webkit-animation-delay: .35s;
+      animation-delay: .35s; }
+
+/* line 30, components/overlay.scss */
+.overlay-menu {
+  position: absolute;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  text-align: center; }
+
+/* line 44, components/overlay.scss */
+.overlay-menu_list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block; }
+
+/* line 51, components/overlay.scss */
+.overlay-menu_item {
+  display: block;
+  position: relative;
+  line-height: 1;
+  opacity: 0; }
+  /* line 58, components/overlay.scss */
+  .overlay-menu_item:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff; }
+  /* line 68, components/overlay.scss */
+  .overlay-menu_item:last-child:after {
+    display: none; }
+
+/* line 73, components/overlay.scss */
+.overlay-menu_link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px; }
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+/* line 103, components/overlay.scss */
+.body-active-menu {
+  overflow: hidden; }
+
+/* line 107, components/overlay.scss */
+.btn-close {
+  color: #fff;
+  font-size: 24px;
+  font-family: Helvetica; }
+
+/* line 1, components/title.scss */
+.title {
+  display: flex;
+  align-items: flex-start;
+  width: 32%;
+  min-height: 16.6666666667rem;
+  flex-direction: column; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/title.scss */
+    .title {
+      width: 100%;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 0;
+      justify-content: flex-end;
+      background: url("../img/CHOCCO/title/comp_1.png") top 2% center/61% auto no-repeat; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    /* line 1, components/title.scss */
+    .title {
+      justify-content: flex-end;
+      background: url("../img/CHOCCO/title/comp_1.png") top 2% center/61% auto no-repeat; } }
+
+/* line 27, components/title.scss */
+.title-text {
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+  line-height: 1.2;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 0.2222222222rem; }
+  @media screen and (max-width: 480px) {
+    /* line 27, components/title.scss */
+    .title-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 1.1111111111rem; } }
+
+/* line 43, components/title.scss */
+.subtitle {
+  font-size: 1.1666666667rem;
+  font-style: normal;
+  line-height: 1.2;
+  margin-bottom: 1.6666666667rem; }
+  @media screen and (max-width: 768px) {
+    /* line 43, components/title.scss */
+    .subtitle {
+      padding: 0 25%; } }
+  @media screen and (max-width: 480px) {
+    /* line 43, components/title.scss */
+    .subtitle {
+      padding: 0 16%; } }
+
+/* line 1, components/btn.scss */
+.btn {
+  background: #fff;
+  color: #0b4d3c;
+  font-size: 1.0555555556rem;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 1.9444444444rem;
+  padding: 0.9444444444rem 2.1111111111rem; }
+  /* line 14, components/btn.scss */
+  .btn:hover {
+    background: #0b4d3c;
+    color: #fff;
+    transition: 0.3s; }
+  /* line 20, components/btn.scss */
+  .btn-green {
+    background: #0b4d3c;
+    border: 1px solid #0b4d3c;
+    color: #fff; }
+    /* line 25, components/btn.scss */
+    .btn-green:hover {
+      background: #fff;
+      color: #0b4d3c;
+      transition: 0.3s; }
+  /* line 32, components/btn.scss */
+  .btn-close_app {
+    background: #0b4d3c;
+    border: 1px solid #0b4d3c;
+    color: #fff; }
+    /* line 37, components/btn.scss */
+    .btn-close_app:hover {
+      background: #fff;
+      color: #0b4d3c;
+      transition: 0.3s; }
+  /* line 45, components/btn.scss */
+  .btn-transparent {
+    background: transparent;
+    color: #000;
+    text-transform: none; }
+    /* line 50, components/btn.scss */
+    .btn-transparent:hover {
+      background: transparent;
+      color: #0b4d3c; }
+
+/* line 1, components/bullet-text.scss */
+.bullet-text {
+  display: flex;
+  width: 44%;
+  margin: 0rem 2.1666666667rem 1.2222222222rem 0.3888888889rem;
+  justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/bullet-text.scss */
+    .bullet-text {
+      display: none; } }
+
+/* line 12, components/bullet-text.scss */
+.icon-bullet_leaves, .icon-bullet_auto, .icon-bullet_paper {
+  width: 7.7777777778rem;
+  font-size: 0.9444444444rem;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+/* line 21, components/bullet-text.scss */
+.icon-bullet_leaves::before {
+  display: flex;
+  width: 5.1111111111rem;
+  height: 1.8333333333rem;
+  align-items: flex-end;
+  content: url("../img/CHOCCO/icons/5.svg"); }
+
+/* line 30, components/bullet-text.scss */
+.icon-bullet_auto::before {
+  display: flex;
+  width: 5.3333333333rem;
+  height: 1.8333333333rem;
+  align-items: flex-end;
+  margin-left: 0.6111111111rem;
+  content: url("../img/CHOCCO/icons/6.svg"); }
+
+/* line 39, components/bullet-text.scss */
+.icon-bullet_paper::before {
+  display: flex;
+  width: 3.4444444444rem;
+  height: 1.8333333333rem;
+  align-items: flex-end;
+  margin-left: 0.2222222222rem;
+  content: url("../img/CHOCCO/icons/4.svg"); }
+
+/* line 48, components/bullet-text.scss */
+.icon-bullet_leaves::before, .icon-bullet_auto::before, .icon-bullet_paper::before {
+  margin-right: 0.5rem; }
+
+/* line 1, components/section.scss */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  min-height: 36.1111111111rem; }
+
+/* line 9, components/section.scss */
+.section-title {
+  color: #292929;
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.3888888889rem; }
+  @media screen and (max-width: 480px) {
+    /* line 9, components/section.scss */
+    .section-title {
+      margin-top: 6%; } }
+
+/* line 24, components/section.scss */
+.title_green {
+  color: #0b4d3c; }
+
+/* line 1, components/benefits-section.scss */
+.benefits-section {
+  position: relative;
+  background: url("../img/CHOCCO/benefits-section/pattern_sheet_1.png") left top 57% no-repeat; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/benefits-section.scss */
+    .benefits-section {
+      background-position: left top 17%; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/benefits-section.scss */
+    .benefits-section {
+      background: none; } }
+  /* line 13, components/benefits-section.scss */
+  .benefits-section::before {
+    content: url("../img/CHOCCO/benefits-section/raspberry_1.png");
+    position: absolute;
+    bottom: -4.4444444444rem;
+    left: 0; }
+    @media screen and (max-width: 480px) {
+      /* line 13, components/benefits-section.scss */
+      .benefits-section::before {
+        content: none; } }
+
+/* line 1, components/headline.scss */
+.headline {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/headline.scss */
+    .headline {
+      height: 97%; } }
+
+/* line 11, components/headline.scss */
+.headline-cap {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (max-width: 480px) {
+    /* line 11, components/headline.scss */
+    .headline-cap {
+      line-height: 1;
+      margin-top: 0; } }
+
+/* line 21, components/headline.scss */
+.headline-title {
+  color: #292929;
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.3888888889rem; }
+  @media screen and (max-width: 480px) {
+    /* line 21, components/headline.scss */
+    .headline-title {
+      margin-top: 2%;
+      margin-bottom: 0; } }
+
+/* line 35, components/headline.scss */
+.headline-subtitle {
+  color: #666666;
+  padding: 0 26%;
+  margin-bottom: 2.3333333333rem; }
+  @media screen and (max-width: 768px) {
+    /* line 35, components/headline.scss */
+    .headline-subtitle {
+      padding: 0 23%; } }
+  @media screen and (max-width: 480px) {
+    /* line 35, components/headline.scss */
+    .headline-subtitle {
+      padding: 0 5%; } }
+
+/* line 1, components/benefits.scss */
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3%;
+  margin-right: 4%; }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/benefits.scss */
+    .benefits-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      line-height: 1;
+      height: 100%; } }
+
+/* line 16, components/benefits.scss */
+.benefits-item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative; }
+  @media screen and (max-width: 480px) {
+    /* line 16, components/benefits.scss */
+    .benefits-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0; } }
+  /* line 27, components/benefits.scss */
+  .benefits-item::before {
+    content: url("../img/CHOCCO/benefits/combined.png");
+    position: absolute;
+    top: 2.7777777778rem;
+    right: 0;
+    transform: translateX(50%); }
+    @media screen and (max-width: 768px) {
+      /* line 27, components/benefits.scss */
+      .benefits-item::before {
+        display: none; } }
+  /* line 39, components/benefits.scss */
+  .benefits-item:first-child {
+    padding-left: 0; }
+  /* line 43, components/benefits.scss */
+  .benefits-item:last-child {
+    padding-right: 0; }
+    /* line 46, components/benefits.scss */
+    .benefits-item:last-child::before {
+      display: none; }
+
+/* line 1, components/benefit.scss */
+.benefit {
+  text-align: center; }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/benefit.scss */
+    .benefit {
+      text-align: start; } }
+
+/* line 10, components/benefit.scss */
+.benefit-wrap {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  position: relative;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden; }
+
+/* line 20, components/benefit.scss */
+.benefit-icon {
+  width: 4.1666666667rem;
+  height: 3.8333333333rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 29, components/benefit.scss */
+.benefit-desc {
+  color: #666666; }
+  @media screen and (max-width: 480px) {
+    /* line 29, components/benefit.scss */
+    .benefit-desc {
+      padding: 0 1.3888888889rem 0 1rem; } }
+
+/* line 37, components/benefit.scss */
+.benefit-title {
+  font-size: 1.5555555556rem;
+  font-weight: bold;
+  color: #292929; }
+  @media screen and (max-width: 480px) {
+    /* line 37, components/benefit.scss */
+    .benefit-title {
+      padding: 0 1rem; } }
+
+/* line 1, components/slider.scss */
+.slider-section {
+  background-color: #F8FAF9; }
+
+/* line 5, components/slider.scss */
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; }
+
+/* line 13, components/slider.scss */
+.slider-btn {
+  position: absolute;
+  top: 41%;
+  transform: translateY(50%);
+  width: 27px;
+  z-index: 20; }
+  /* line 20, components/slider.scss */
+  .slider-btn_next {
+    left: 2%; }
+    @media screen and (max-width: 480px) {
+      /* line 20, components/slider.scss */
+      .slider-btn_next {
+        left: -5px; } }
+  /* line 28, components/slider.scss */
+  .slider-btn_prev {
+    right: 2%; }
+    @media screen and (max-width: 480px) {
+      /* line 28, components/slider.scss */
+      .slider-btn_prev {
+        right: -5px; } }
+  @media screen and (max-width: 768px) {
+    /* line 13, components/slider.scss */
+    .slider-btn {
+      top: 38%; } }
+  @media screen and (max-width: 480px) {
+    /* line 13, components/slider.scss */
+    .slider-btn {
+      top: 36%; } }
+
+/* line 45, components/slider.scss */
+.slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+
+/* line 54, components/slider.scss */
+.slider-list {
+  width: 100%;
+  display: flex;
+  right: 0;
+  position: relative; }
+
+/* line 61, components/slider.scss */
+.slider-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; }
+  @media screen and (max-width: 768px) {
+    /* line 61, components/slider.scss */
+    .slider-item {
+      width: 100%;
+      flex-direction: column; } }
+
+/* line 74, components/slider.scss */
+.slider-left {
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    /* line 74, components/slider.scss */
+    .slider-left {
+      width: 50%; } }
+  @media screen and (max-width: 480px) {
+    /* line 74, components/slider.scss */
+    .slider-left {
+      width: 65%; } }
+
+/* line 87, components/slider.scss */
+.slider-img {
+  display: flex;
+  object-fit: cover; }
+  @media screen and (max-width: 768px) {
+    /* line 87, components/slider.scss */
+    .slider-img {
+      align-items: center; } }
+
+/* line 96, components/slider.scss */
+.slider-pic {
+  display: flex;
+  max-width: 100%; }
+
+/* line 101, components/slider.scss */
+.slider-ingredients {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-left: 38px; }
+  @media screen and (max-width: 768px) {
+    /* line 101, components/slider.scss */
+    .slider-ingredients {
+      display: none; } }
+
+/* line 119, components/slider.scss */
+.slider-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #292929;
+  text-transform: uppercase; }
+  @media screen and (max-width: 768px) {
+    /* line 119, components/slider.scss */
+    .slider-title {
+      font-size: 30px;
+      text-align: center; } }
+
+/* line 131, components/slider.scss */
+.slider_title {
+  padding: 0;
+  line-height: 42px;
+  margin: 26px 40px 34px 36px; }
+  @media screen and (max-width: 768px) {
+    /* line 131, components/slider.scss */
+    .slider_title {
+      margin: 0; } }
+
+/* line 141, components/slider.scss */
+.slider-desc {
+  font-size: 18px;
+  color: #666666;
+  margin: 0 40px 34px 36px; }
+  @media screen and (max-width: 768px) {
+    /* line 141, components/slider.scss */
+    .slider-desc {
+      text-align: center;
+      margin: 0 90px 34px; } }
+  @media screen and (max-width: 480px) {
+    /* line 141, components/slider.scss */
+    .slider-desc {
+      margin: 0 52px 10px; } }
+
+/* line 156, components/slider.scss */
+.slider-tag {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 33px;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 768px) {
+    /* line 156, components/slider.scss */
+    .slider-tag {
+      width: initial;
+      justify-content: space-evenly; } }
+
+/* line 169, components/slider.scss */
+.tag-text {
+  color: #666666; }
+
+/* line 173, components/slider.scss */
+.tag-value {
+  color: #000000; }
+
+/* line 177, components/slider.scss */
+.slider-row {
+  display: flex;
+  align-items: flex-end; }
+  @media screen and (max-width: 768px) {
+    /* line 177, components/slider.scss */
+    .slider-row {
+      justify-content: space-evenly; } }
+
+/* line 186, components/slider.scss */
+.slider-price {
+  margin-left: 44px;
+  margin-right: 30px; }
+  @media screen and (max-width: 480px) {
+    /* line 186, components/slider.scss */
+    .slider-price {
+      margin-right: 0; } }
+
+/* line 1, components/composition.scss */
+.composition {
+  width: 270px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(40px);
+  color: #000000;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: -2100px;
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+/* line 15, components/composition.scss */
+.slider-ingredients:hover .composition {
+  opacity: 1;
+  left: 100%; }
+
+/* line 20, components/composition.scss */
+.composition-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 16px 10px 16px 10px; }
+
+/* line 29, components/composition.scss */
+.composition-icon {
+  width: 50px;
+  height: 50px; }
+
+/* line 34, components/composition.scss */
+.composition-name {
+  width: 50%; }
+
+/* line 38, components/composition.scss */
+.composition-amount {
+  padding-right: 20px; }
+
+/* line 1, components/team.scss */
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* line 7, components/team.scss */
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    /* line 7, components/team.scss */
+    .team-list {
+      padding: 0 10%;
+      flex-direction: column;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      -webkit-box-align: center; } }
+
+/* line 26, components/team.scss */
+.team-item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
+  max-width: 231px;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    /* line 26, components/team.scss */
+    .team-item {
+      -webkit-box-flex: initial;
+      -ms-flex: initial;
+      flex: initial;
+      margin-bottom: 35px;
+      margin-right: 0; } }
+
+/* line 46, components/team.scss */
+.team-member {
+  height: 288px;
+  margin-bottom: 20px; }
+
+/* line 52, components/team.scss */
+.team-desktop .team-content {
+  position: absolute;
+  top: 100%; }
+@media screen and (max-width: 768px) {
+  /* line 51, components/team.scss */
+  .team-desktop {
+    display: none; } }
+
+/* line 62, components/team.scss */
+.team-phone {
+  display: none; }
+  /* line 65, components/team.scss */
+  .team-phone .team-item {
+    margin-bottom: 0; }
+  @media screen and (max-width: 768px) {
+    /* line 62, components/team.scss */
+    .team-phone {
+      display: flex; } }
+
+/* line 77, components/team.scss */
+.team-title {
+  color: #000000;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+/* line 93, components/team.scss */
+.team-content {
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+  height: 0; }
+  /* line 101, components/team.scss */
+  .team-content_block.team-content_bottom {
+    margin-bottom: 20px; }
+  /* line 105, components/team.scss */
+  .team-content_block .team-content_job {
+    color: #000000; }
+  /* line 109, components/team.scss */
+  .team-content_block .team-content_text {
+    color: #666666;
+    font-weight: 300; }
+
+/* line 1, components/button.scss */
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0; }
+
+@media screen and (max-width: 480px) {
+  /* line 1, components/reviews.scss */
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%; } }
+
+/* line 10, components/reviews.scss */
+.reviews-section {
+  position: relative;
+  background: url("../img/CHOCCO/reviews/berry_3.png") right 5% top 1% no-repeat; }
+  @media screen and (max-width: 480px) {
+    /* line 10, components/reviews.scss */
+    .reviews-section {
+      background-position: right 1% top 1%; } }
+  /* line 18, components/reviews.scss */
+  .reviews-section::before {
+    content: url("../img/CHOCCO/reviews/pattern_1.png");
+    position: absolute;
+    bottom: -8.5555555556rem;
+    left: 0; }
+  /* line 25, components/reviews.scss */
+  .reviews-section::after {
+    content: url("../img/CHOCCO/reviews/berry_2.png");
+    position: absolute;
+    bottom: -4.4444444444rem;
+    left: 0; }
+
+/* line 34, components/reviews.scss */
+.reviews-display {
+  background: #F8FAF9 url("../img/CHOCCO/reviews/layer_1.png") right top no-repeat;
+  margin-left: 4.6666666667rem;
+  margin-right: 4.3333333333rem;
+  padding: 2.8333333333rem 4.3333333333rem 1.8888888889rem 2.4444444444rem;
+  overflow: hidden;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    /* line 34, components/reviews.scss */
+    .reviews-display {
+      display: flex;
+      margin: 0 0 2.2222222222rem;
+      padding: 2.8333333333rem 1.2222222222rem 1.8888888889rem; } }
+  @media screen and (max-width: 480px) {
+    /* line 34, components/reviews.scss */
+    .reviews-display {
+      justify-content: flex-end;
+      margin: 0;
+      padding: 2.6666666667rem 1.2222222222rem 1.8888888889rem; } }
+  /* line 54, components/reviews.scss */
+  .reviews-display::before {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background: #ffff;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -3.6111111111rem; }
+    @media screen and (max-width: 480px) {
+      /* line 54, components/reviews.scss */
+      .reviews-display::before {
+        display: none; } }
+
+/* line 71, components/reviews.scss */
+.reviews-display_list {
+  position: relative;
+  min-height: 280px; }
+
+/* line 76, components/reviews.scss */
+.reviews-display_item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  opacity: 0; }
+  /* line 86, components/reviews.scss */
+  .reviews-display_item.active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset; }
+
+/* line 93, components/reviews.scss */
+.reviews-display-inner {
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    /* line 93, components/reviews.scss */
+    .reviews-display-inner {
+      flex-direction: column;
+      text-align: center;
+      align-items: center; } }
+
+/* line 103, components/reviews.scss */
+.reviews-avatar {
+  width: 14.1111111111rem;
+  height: 14.4444444444rem; }
+  @media screen and (max-width: 768px) {
+    /* line 103, components/reviews.scss */
+    .reviews-avatar {
+      width: 7.2222222222rem;
+      height: 7.3333333333rem; } }
+
+/* line 113, components/reviews.scss */
+.reviews-avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+/* line 119, components/reviews.scss */
+.reviews-content {
+  flex: 1;
+  margin-left: 1.1111111111rem; }
+  @media screen and (max-width: 768px) {
+    /* line 123, components/reviews.scss */
+    .reviews-content_block1 {
+      display: none; } }
+
+/* line 131, components/reviews.scss */
+.reviews-title {
+  color: #292929;
+  margin-top: 0.5rem;
+  font-size: 1.6666666667rem;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+/* line 139, components/reviews.scss */
+.reviews-text {
+  color: #666666;
+  line-height: 1.2;
+  margin-bottom: 1.4444444444rem;
+  padding-right: 20%; }
+  @media screen and (max-width: 768px) {
+    /* line 139, components/reviews.scss */
+    .reviews-text {
+      padding: 0; } }
+
+/* line 150, components/reviews.scss */
+.reviews-author {
+  color: #292929;
+  font-size: 1rem;
+  font-weight: bold; }
+
+/* line 156, components/reviews.scss */
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+/* line 162, components/reviews.scss */
+.reviews-switcher_item {
+  position: relative;
+  width: 4.5555555556rem;
+  height: 4.5555555556rem;
+  border: 0.2222222222rem solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer; }
+  /* line 171, components/reviews.scss */
+  .reviews-switcher_item.active {
+    border-color: #365A49; }
+
+/* line 1, components/interactive-avatar.scss */
+.interactive-avatar_link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 10, components/interactive-avatar.scss */
+.interactive-avatar_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/* line 1, components/border.scss */
+.border-section {
+  background: url("../img/CHOCCO/border/pattern.png") center center no-repeat; }
+  /* line 6, components/border.scss */
+  .border-section::before {
+    content: url("../img/CHOCCO/border/sheet_3.png");
+    right: 3%;
+    bottom: 5%;
+    position: absolute; }
+  /* line 14, components/border.scss */
+  .border-section::after {
+    content: url("../img/CHOCCO/border/berry_2.png");
+    left: 3%;
+    bottom: 5%;
+    position: absolute; }
+  @media screen and (max-width: 768px) {
+    /* line 22, components/border.scss */
+    .border-section::before, .border-section::after {
+      display: none; } }
+
+/* line 1, components/form.scss */
+.form {
+  display: flex;
+  color: #497870;
+  margin: 5% 7% 0 7%;
+  user-select: none; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/form.scss */
+    .form {
+      flex-direction: column;
+      padding: 0 4.1666666667rem; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, components/form.scss */
+    .form {
+      margin: 0;
+      padding: 0; } }
+
+/* line 18, components/form.scss */
+.form-col {
+  flex: 1;
+  margin-right: 1.1111111111rem; }
+  /* line 22, components/form.scss */
+  .form-col:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    /* line 18, components/form.scss */
+    .form-col {
+      margin-right: 0; } }
+
+/* line 31, components/form.scss */
+.form-row {
+  display: flex;
+  margin-bottom: 1rem; }
+
+/* line 36, components/form.scss */
+.form-block {
+  flex: 1;
+  margin-right: 1.1111111111rem; }
+  /* line 40, components/form.scss */
+  .form-block:last-child {
+    margin-right: 0; }
+
+/* line 45, components/form.scss */
+.form-input {
+  width: 100%;
+  border: none;
+  padding: 1rem 0.6111111111rem;
+  border-radius: 0.2222222222rem;
+  border: solid 0.1666666667rem transparent; }
+  @media screen and (max-width: 480px) {
+    /* line 45, components/form.scss */
+    .form-input {
+      padding: 0; } }
+  /* line 56, components/form.scss */
+  .form-input_textarea {
+    height: 9.8333333333rem;
+    resize: none; }
+    @media screen and (max-width: 480px) {
+      /* line 56, components/form.scss */
+      .form-input_textarea {
+        height: 4.1666666667rem; } }
+  /* line 65, components/form.scss */
+  .form-input:focus {
+    border-color: #DEE2BD;
+    border-radius: 0.2222222222rem;
+    outline: none; }
+
+/* line 72, components/form.scss */
+.input-error {
+  border-color: red; }
+
+/* line 76, components/form.scss */
+.form-controls {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2.2222222222rem; }
+  @media screen and (max-width: 480px) {
+    /* line 76, components/form.scss */
+    .form-controls {
+      padding-bottom: 0.8333333333rem; } }
+
+@media screen and (max-width: 768px) {
+  /* line 86, components/form.scss */
+  .form-btns {
+    display: flex;
+    justify-content: center; } }
+
+/* line 1, components/radio.scss */
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 0.5555555556rem; }
+  /* line 8, components/radio.scss */
+  .radio_checkbox .radio-visible {
+    border-radius: 0; }
+    /* line 11, components/radio.scss */
+    .radio_checkbox .radio-visible::before {
+      background: url("../img/CHOCCO/icons/checkmark.svg") center center no-repeat; }
+
+/* line 18, components/radio.scss */
+.radio-elem {
+  display: none; }
+  /* line 22, components/radio.scss */
+  .radio-elem:checked ~ .radio-visible::before {
+    display: block; }
+
+/* line 28, components/radio.scss */
+.radio-visible {
+  width: 1.4444444444rem;
+  height: 1.4444444444rem;
+  position: relative;
+  border-radius: 50%;
+  background: #ffffff; }
+  /* line 35, components/radio.scss */
+  .radio-visible::before {
+    content: "";
+    width: 0.7777777778rem;
+    height: 0.7777777778rem;
+    background: #365A49;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/* line 50, components/radio.scss */
+.radio-title {
+  padding-left: 0.5555555556rem;
+  padding-right: 1.2777777778rem; }
+
+/* line 1, components/modal.scss */
+.modal {
+  display: none; }
+  /* line 4, components/modal.scss */
+  .modal.error-modal .modal-content {
+    color: red; }
+  /* line 9, components/modal.scss */
+  .modal.fancybox-content {
+    color: #000000;
+    font-weight: 500;
+    padding: 0 !important; }
+  /* line 15, components/modal.scss */
+  .modal .fancybox-button {
+    display: none; }
+
+/* line 20, components/modal.scss */
+.error-modal {
+  color: red; }
+
+/* line 24, components/modal.scss */
+.modal-container {
+  background: #fff;
+  padding: 35px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* line 1, components/fixed-menu.scss */
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  z-index: 100; }
+  @media screen and (max-width: 768px) {
+    /* line 1, components/fixed-menu.scss */
+    .fixed-menu {
+      display: none; } }
+
+/* line 12, components/fixed-menu.scss */
+.fixed-item {
+  margin-bottom: 0.2777777778rem; }
+  /* line 16, components/fixed-menu.scss */
+  .fixed-item_active .fixed-link {
+    border-color: #fff; }
+
+/* line 22, components/fixed-menu.scss */
+.fixed-link {
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
+  border-radius: 50%;
+  border: 0.0555555556rem solid transparent;
+  display: block;
+  position: relative; }
+  /* line 30, components/fixed-menu.scss */
+  .fixed-link::before {
+    content: "";
+    width: 0.3333333333rem;
+    height: 0.3333333333rem;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=main.css.map */

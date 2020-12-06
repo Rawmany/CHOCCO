@@ -42,4 +42,17 @@
         }
 
     }
+
+    &-close_app {
+        background: $darkGreen;
+        border: 1px solid $darkGreen;
+        color: #fff;
+    
+        &:hover {
+          background: #fff;
+          color: $darkGreen;
+          transition: 0.3s;
+          
+        }
+    }
 }

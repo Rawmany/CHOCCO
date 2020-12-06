@@ -1,0 +1,174 @@
+.reviews {
+  @include phones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  }
+}
+
+.reviews-section {
+  position: relative;
+  background: url("../img/CHOCCO/reviews/berry_3.png") right 5% top 1% no-repeat;
+
+  @include phones {
+    background-position: right 1% top 1%;
+  }
+
+  &::before {
+    content: url("../img/CHOCCO/reviews/pattern_1.png");
+    position: absolute;
+    bottom: rem(-154px);
+    left: 0;
+  }
+
+  &::after {
+    content:  
+    url("../img/CHOCCO/reviews/berry_2.png");
+    position: absolute;
+    bottom: rem(-80px);
+    left: 0;
+  }
+}
+
+.reviews-display {
+  background: #F8FAF9 url("../img/CHOCCO/reviews/layer_1.png") right top no-repeat;
+  margin-left: rem(84px);
+  margin-right: rem(78px);
+  padding: rem(51px) rem(78px) rem(34px) rem(44px);
+  overflow: hidden;
+  position: relative;
+
+  @include tablets {
+    display: flex;
+    margin: 0 0 rem(40px);
+    padding: rem(51px) rem(22px) rem(34px);
+  }
+
+  @include phones {
+    justify-content: flex-end;
+    margin: 0;
+    padding: rem(48px) rem(22px) rem(34px);
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: rem(90px);
+    height: rem(90px);
+    background: #ffff;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-65px);
+
+    @include phones {
+      display: none;
+    }
+  }
+}
+
+.reviews-display_list {
+  position: relative;
+  min-height: 280px;
+}
+
+.reviews-display_item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  opacity: 0;
+
+  &.active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
+  }
+}
+
+.reviews-display-inner {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.reviews-avatar {
+  width: rem(254px);
+  height: rem(260px);
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(132px);
+  }
+}
+
+.reviews-avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-content {
+  flex: 1;
+  margin-left: rem(20px);
+
+  &_block1 {
+
+    @include tablets {
+      display: none;
+    }
+  }
+}
+
+.reviews-title {
+  color: #292929;
+  margin-top: rem(9px);
+  font-size: rem(30px);
+  font-weight: bold;
+  margin-bottom: rem(18px);
+}
+
+.reviews-text {
+  color: #666666;
+  line-height: 1.2;
+  margin-bottom: rem(26px);
+  padding-right: 20%;
+
+  @include tablets {
+    padding: 0;
+  }
+}
+
+.reviews-author {
+  color: #292929;
+  font-size: rem(18px);
+  font-weight: bold;
+}
+
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reviews-switcher_item {
+  position: relative;
+  width: rem(82px);
+  height: rem(82px);
+  border: rem(4px) solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+   
+  &.active {
+   border-color: #365A49;
+  }
+}

@@ -48,10 +48,18 @@
     padding: rem(18px) rem(11px);
     border-radius: rem(4px);
     border: solid rem(3px) transparent;
+
+    @include phones {
+      padding: 0;
+    }
   
     &--textarea {
       height: rem(177px);
       resize: none;
+
+      @include phones {
+        height: rem(75px);
+      }
     }
   
     &:focus {
@@ -60,13 +68,18 @@
       outline: none;
     }
   }
+
+  .input-error {
+    border-color: red;
+  }
   
   .form__controls {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: rem(40px);
 
     @include phones {
-      justify-content: center;
+      padding-bottom: rem(15px);
     }
   }
 

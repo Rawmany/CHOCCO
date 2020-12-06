@@ -1,0 +1,85 @@
+html {
+  font-size: $baseFontSize; 
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
+}
+
+body {
+  font-family: 'Alegreya Sans', sans-serif;  
+  color: #fff;                      
+  line-height: 1.42;                     
+  margin: 0;
+  -webkit-font-smoothing: antialiased; 
+  position: relative;  
+}
+
+body, html {
+  height: 100%;
+} 
+
+.big-block {
+  height: 100vh;
+  width: 100vw;
+  background: $green;
+}
+
+
+a {
+  color: inherit;  
+}
+
+table {
+  border-collapse: collapse;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+  list-style: none; 
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 95%;
+  max-width: $containerWidth;
+  margin: 0 auto;
+  position: relative;
+}
