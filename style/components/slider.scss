@@ -1,5 +1,9 @@
 .slider-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #F8FAF9;
+  position: relative;
 }
   
 .slider-container {
@@ -12,33 +16,33 @@
 //slider-controls
 .slider-btn {
   position: absolute;
-  top: 41%;
+  top: 44%;
   transform: translateY(50%);
   width: 27px;
   z-index: 20;
      
   &_next {
-    left: 2%;
+    left: 5%;
 
     @include phones {
-      left: -5px;
+      left: 5px;
     }
   }
     
   &_prev {
-    right: 2%;
+    right: 5%;
 
     @include phones {
-      right: -5px;
+      right: 5px;
     }
   } 
 
   @include tablets {
-    top: 38%;
+    top: 34%;
   }
 
   @include phones {
-    top: 36%;
+    top: 21%;
   }
 }
   

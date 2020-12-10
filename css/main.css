@@ -1136,6 +1136,42 @@ img {
   font-weight: 300;
 }
 
+.products-section {
+  background: url("../img/CHOCCO/products/background.png") center center/cover no-repeat;
+  position: relative;
+}
+
+.products-menu {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-style: bold;
+}
+
+.products-link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.products-item {
+  display: flex;
+}
+
+.menu-title {
+  position: relative;
+  width: 100px;
+}
+
+.products-content {
+  background: rgba(51, 53, 55, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.7s;
+}
+
 button {
   border: none;
   background: transparent;
@@ -1143,43 +1179,11 @@ button {
   padding: 0;
 }
 
-.socials {
-  margin-right: 74px;
-  display: flex;
-}
-
-.socials__item {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-.socials__item:last-child {
-  margin-right: 0;
-}
-
-.socials__link {
+.player {
+  position: relative;
   display: block;
-  text-decoration: none;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-.socials__item--icon--vk .socials__link {
-  background-image: url("../img/icons/vk.svg");
-}
-
-.socials__item--icon--fb .socials__link {
-  background-image: url("../img/icons/f.svg");
-}
-
-.socials__item--icon--insta .socials__link {
-  background-image: url("../img/icons/in.svg");
-}
-
-.socials__item--icon--tw .socials__link {
-  background-image: url("../img/icons/tv.svg");
+  width: 100%;
+  height: 100%;
 }
 
 .order-section {
