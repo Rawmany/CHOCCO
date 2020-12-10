@@ -3,7 +3,7 @@ const playerContainer = $('.player');
 
 let eventsInit = () => {
     $(".player__start").click(e => {
-        e.preventDefault();        
+        e.preventDefault();               
 
         if (playerContainer.hasClass('.paused')) {
             playerContainer.removeClass("paused");

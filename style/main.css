@@ -1751,3 +1751,8 @@ button {
 .fixed-list .fixed-item .fixed-link_active {
   border-color: #fff;
 }
+
+.map {
+  height: 100%;
+  width: 100%;
+}
