@@ -1759,6 +1759,17 @@ button {
 .footer-container_content {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .footer-container_content {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer-container_content {
+    flex-direction: column;
+  }
 }
 
 .container-phone_footer {
@@ -1791,4 +1802,38 @@ button {
 .contacts-phone_footer::before {
   content: url("../img/CHOCCO/container-logo/phone-green.png");
   margin-right: 0.2777777778rem;
+}
+
+.socials-list {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .socials-list {
+    justify-content: center;
+  }
+}
+
+.socials {
+  display: block;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  background: center center no-repeat;
+}
+
+.socials-item-icon_vk .socials {
+  background-image: url("../img/CHOCCO/social/vk.png");
+}
+
+.socials-item-icon_f .socials {
+  background-image: url("../img/CHOCCO/social/f.png");
+}
+
+.socials-item-icon_in .socials {
+  background-image: url("../img/CHOCCO/social/in.png");
+}
+
+.socials-item-icon_tv .socials {
+  background-image: url("../img/CHOCCO/social/tv.png");
 }
